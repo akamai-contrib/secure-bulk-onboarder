@@ -1,0 +1,27 @@
+OnboardConfig:
+ Account:
+  #Enter contract ID
+  - ctr_XXX
+  #Enter Group ID
+  - grp_XXX
+ ProductId:
+  #Enter the product ID
+  - Site_Accel
+ Host-Origin:
+  #Enter hostnames:originnames one per line.
+  - HOST1:ORIGIN1
+  - HOST2:ORIGIN2
+ notify:
+  #Enter notification email.
+  - youremail@email.com
+OnboardCertconfig:
+  Action: TRUE
+  #Enter Common Name of the cert
+  CN: CERT_CN
+  #Enter Altnames in the box, enclosed in "" and separated by a comma
+  Altnames: ["ALTNAME1","ALTNAME2"]
+OnboardSecurityConfig:
+  #Enter WAF policy ID
+  Policy_ID: POLICY_ID
+  #Enter WAF policy version number
+  Policy_V_No: POLICY_VERSION_NUMBER
